@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Darpan">
+    <title>World Weather</title>
+    <style>
+        .continents a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding-right: 10px;
+            border-right: black solid 2px;
+            margin-left: 5px;
+        }
+        .continents a:hover{background-color: silver;}
+        #noRightBorder{border-right-style: none;}
+        img{margin-top: 15px;}
+        .table{display: table;}
+        .row{display: table-row;}
+        .cell{
+            display: table-cell;
+            padding: 30px 10px;
+        }
+        .cell:nth-child(1){
+            text-align: right;
+            vertical-align: middle;
+            font-size: 1.2em;
+        }
+        
+        h2{margin: 0;}
+        img{width: 80%;}
+       
+    </style>
+</head>
+<body>
+    <h1>World Weather</h1>
+    <nav class="continents">                                       
+        <a href="#asia">Asia</a>
+        <a href="#northAmerica">North America</a>
+        <a id="noRightBorder" href="#europe">Europe</a>
+    </nav>
+    <img src="weather.jpg" alt="Weather Image">
+    <div class="table">
+        <div class="row">
+            <div class="cell">
+                <h2 id="asia">Asia:</h2>
+            </div>
+            <div class="cell">
+                <a href="https://www.accuweather.com/en/in/new-delhi/187745/weather-forecast/187745">New Delhi. India</a><br>
+                <a href="https://www.theweathernetwork.com/af/weather/kabul/kabul">Kabul. Afghanistan</a><br>
+                <a href="https://www.theweathernetwork.com/bd/weather/dhaka/dhaka">Dhaka. Bangladesh</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <h2 id="northAmerica">North America:</h2>
+            </div>
+            <div class="cell">
+                <a href="https://www.theweathernetwork.com/ca/weather/ontario/ottawa">Ottawa. Canada</a><br>
+                <a href="https://www.accuweather.com/en/cu/havana/122438/weather-forecast/122438">Havana. Cuba</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <h2 id="europe">Europe:</h2>
+            </div>
+            <div class="cell">
+                <a href="https://www.theweathernetwork.com/fr/weather/ile-de-france/paris">Paris, france</a><br>
+                <a href="https://www.accuweather.com/en/de/berlin/10178/weather-forecast/178087">Berlin. Germany</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
